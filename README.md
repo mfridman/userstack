@@ -50,9 +50,3 @@ fmt.Printf("device: %s\nentity: %s\ncrawler: %s", data.Device.Type, data.Type, d
 // entity: mobile-browser
 // crawler: unknown
 ```
-
-### TODO
-
-- [ ] implement bulk lookup
-- [ ] document bulk lookup
-- [ ] add tests
