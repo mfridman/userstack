@@ -26,7 +26,7 @@ Crawler information is only available for Basic Plan or higher. So if you don't 
 
 Have fun. Please, use this client and the apilayer service to improve user experience on the web.
 
-### Example usage - single Get lookup
+### Example usage - single lookup (HTTP GET)
 
 ```
 c, err := userstack.NewClient(key, nil, false)
