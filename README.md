@@ -4,7 +4,7 @@
 
 `userstack` is a Go client library for the [apilayer userstack](https://userstack.com/) service, which provides instant user-agent string lookups. 
 
-To use this client you will need an **API access key**. The free tier supports 10,000 monthly lookups, but over `http`!! To get HTTPS Encryption you need a Basic plan or higher 🤷‍♂️.
+To use this client you will need an **API access key**. The free tier supports 10,000 monthly lookups, but over `http-only`. To get HTTPS Encryption you need a Basic plan or higher 🤷‍♂️.
 
 The official documentation can be found [here](https://userstack.com/documentation).
 
