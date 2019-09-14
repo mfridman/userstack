@@ -49,8 +49,8 @@ type Client struct {
 type Stack struct {
 	Ua    string     `json:"ua"`
 	Type  EntityType `json:"type"`
-	Brand string     `json:"brand"`
-	Name  string     `json:"name"`
+	Brand string     `json:"brand"` // Is this device.brand ?
+	Name  string     `json:"name"`  // Is this device.name ?
 	URL   string     `json:"url"`
 	Os    struct {
 		Name         string `json:"name"`
