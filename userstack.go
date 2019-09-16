@@ -141,6 +141,13 @@ type HTTPClient interface {
 // Note: if you have a non-paying account, you must specify secure: false. Only paid accounts
 // get access to `https`.
 func NewClient(apiKey string, client HTTPClient, secure bool) (*Client, error) {
+	if apiKey == "" {
+		e := ApiErr{Success: false}
+		e.Err.Code = 101
+		e.Err.Type = "missing_access_key"
+		e.Err.Info = "User did not supply an access key."
+		return nil, e
+	}
 	c := Client{
 		apiKey: apiKey,
 		client: client,
